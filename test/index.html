@@ -4,8 +4,118 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Test</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --black: #000000;
+      --white: #FFFFFF;
+    }
+
+    body {
+      width: 600px;
+      height: 584px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: var(--white);
+    }
+    table {
+      width: 100%;
+      height: 100%;
+      background-image: url("https://lh3.googleusercontent.com/fife/AAbDypDqrKP7tufV2kZeabUah5nwwd6aC8tiKL2butRxg-YeylOvBtmZ9-NoHYarQ19cLvxFvLnONpNhKVuRT9-00LZOu3bcxE2tWShXmZyfsXlA6Ew2UPowjPaBDH6vsMB1GkRp3jqjQXtZebWZcp6dn248jmi2rbdSvdYSB3WWfcPM9pw75BzfqVdJR0BxXxVdv0hHgU67nlJE8dvJsgX_YpPGIB6YVHYvsUwY6umN-5j7CKcmdjj1qYFCmzlC58g-85P3MnU1EE6sjViIQBlbJBBDLhgN5fS9UCpXp6z_-2zOAPmaDQRt2k7mZQElYOLX2MF9hzybeZutmy1lv5i3iZZii6o2fV5gt3CxDJXd5Fu5bQcd8pSpR3bfMzU7TqxXwZH6VIJltgPeGrEPijlygqLH6kfWiHKZe-LzVZUkgaA5inAqnkawphR9fs8wgpA9PY41M1KAe0sWec3Hiy4By-INYQq6ErilTzbbhq7pnHiXCvNiresL9MgDEiovaQFMe514nD3UE22vBr-n8_CjDQqbBZTdMUfHEw-ATEzc5iCNCgw4dz9OfSxvgDtsQ13LprReHGHSfmy6js9g_lsv8Ja8CmEC2jx4N4viP7G-Y--2BTMVCs6IEfDUMlv6ZN5vsC24dA4Dam3Zr0zoOQANDnlZypsbc77fo4RhmCePsqh9TLVleTCmFNC4IVbpYs1G6AWU8p6Ba0l3jxo9KyUM7nmiDK-d5ipSNiMglNexWN9qtHI6fngUNIcZJz3pzqQCZYkb8zRq-qzFGs5SgHCWe3R_Cn1ufffx1VJwqI1MhATPI3g-gXrrIFkUmmof_hZLSl3VlfLpfsqBRsC8Eg3Q6C-4w3ZAg92x5LBh45O5-E7rhbYkaqGeiev1cAm1Q68Vj94_3JEO4k6YjzQdNf5aRTEk12pjK0rIjIGsSYOLr_lyfl49j983ji6a9CWV06dJB_AWK_iVMM-6L_fcj4QmepifwWw_nCFifaFzHyNHkuSiqjis34xopsJsNwGKnoetPLca80HFvA_U4HDiTyXK4ak0ojSobc3TBKrtuuBXWJtK28uzTYZwPdYPwNDQCl2GAk5IQOuOEBSiDu6U-TxFyqCbU6dQg4iJiLJFm4D-15eQhxdFepnrbh9vpa9Fq8YbGDr11zyzD5JVosi20WU0ctNenpo4QMHT-HZX5A3YIkusyyBnkUsgzr-IfEFM12SBs1C7ApShEucZTM5Rm25uAr_aUOOCKoGZBjB8p5DJno6K81JN4TAa-UtzDIDYmkmI3dI8_2_KrdGbB7Ty3WMtxkHl23Ua88jRvvIrlPOBay2O71PhTYNP04HYCG6Hj72LFtt5FqHCMDKvliFB7fuHbjFHKcBos4cppwrHz0c6QUnldPQdKCbClXdTDOqI9UwscaDRrD1vC18eOXr8Ms7Ya-4E5d8Mgz7dDdq8mAv_rgWVXiEC5bvSlrtAp1oR32iKsZDfqOpSLh6fV7sk8CNBk5YZOg8q-ZENF7X2KcnB2kPJcGp9or_k3ig3Y08vfnUZLfVtyQhWYLKZD94U3oUb6Dxmsb2U=w648-h902");
+    }
+    td {
+      display: inline-block;
+    }
+
+    .title {
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2.625rem;
+      line-height: 3.2rem;
+      text-align: center;
+    }
+    .titleTop {
+      height: 148.2px;
+      padding-top: 87px;
+    }
+    .titleBottom {
+      height: 119.2px;
+      padding-bottom: 68px;
+    }
+
+    .sneakersItem {
+      width: 120px; 
+      height: 214px;
+    }
+    #item1 {
+      margin-left: 70px;
+      margin-right: 50px;
+    }
+    #item2 {
+      margin-right: 50px;
+    }
+
+    .sneakersItem > img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 4px;
+    }
+
+    .sneakersItem > p:first-of-type {
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.938rem;
+      margin-bottom: 3px;
+    }
+
+    .sneakersItem > p:nth-of-type(2) {
+      font-size: 0.625rem;
+      line-height: 0.75rem;
+      margin-bottom: 2px;
+    }
+
+    .sneakersItem > p:last-of-type {
+      margin-bottom: 15px;
+    }
+
+    .sneakersItem > p:last-of-type > span:first-of-type {
+      font-size: 0.625rem;
+      line-height: 0.75rem;
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+    .sneakersItem > p:last-of-type > span:last-of-type {
+      font-size: 0.875rem;
+      line-height: 1.063rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    .sneakersItem > a {
+      width: 120px;
+      height: 24px;
+      padding: 6px 37px;
+      border: 1px solid var(--white);
+      border-radius: 20px;
+      font-size: 0.625rem;
+      line-height: 0.75rem;
+      background-color: transparent;
+      color:  var(--white);
+      text-decoration: none;
+    }
+    .sneakersItem > a:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  </style>
 </head>
 <body>
   <table>
@@ -14,7 +124,7 @@
       <tr>
         <td>
           <div class="sneakersItem" id="item1">
-            <img src="assets/imgs/sneakers.png" alt="sneakers">
+            <img src="https://lh3.googleusercontent.com/fife/AAbDypDcBp0ci_7uuCkKAoYWiSRFmI3D_6WP45FaKigI6BZP_Qlrl75ifxCaBtXsqIyJ5VRVhcW1KSSNKgedagBtjJjYXD8xH_LHoKZ_Yruzyzjsas2N1iUoCTbVYHN9ZdOYBrIQqK7gmfOy8agUd2PM90A7tY-8RFP0GTrpa_D-wHQMXYbXEx6Pp2GSH9NIo1EnyxGObWZnD3dAzlu5E8DX5bCSp_HCZqYyuAnwip9EAVt3toFa84gqH5eghhCLdLdcaAlpV6Y-EkeSN6kNlbuPl4v7R3squOskYLiJqRw_WhW0KRnmzALd-uYZcJ1I-bWzQY682r03k8BTuhEAC1zx4L8OZ5d6EPvTkL5yiBVBfM0qHuT1F2q65oEwMvDUnikdhaX3QaJbq-h5KqD5fh2SC6N3D-AIW7ptbHwhT5uLs8pvycWqhGOgT5XxZxkOim1siZT_7AYDelPTjVABxmK_P2sPwGughW-PoA4rczcE9l8pDoZ2Xxth-wmUnF8FhBtbbIZpp4BvAcBYk7YkS-T0WJwxpGYfMQRZN_JhmevIGtNmUoZ1reHMGBBcBqziXwX81bqNHC2etjnNdzHfqchoY1ebSgvcQrtcSVZ3Jpx9Ge84Rl8IKoXFaQzzThLROyg52j9f02FPoiUjABuY-qoyz9_e44Y03vHqYiJtGwsX12RD-PEXQIJ0Z-Krk7wMCqm7B6cf6LN9d_EnnkJw8y-1JuP02cSCtAMiIqifbeSvzdnutcyY-WJcbiKR4nRSMyqQ-b7L1GyXJfgEYWKwoI6DUfaVIdpaVmIh9k_GDxlq2yPf8fpeJUiCCguSfdLxU_WaZ8197t4mwmigawBwGfEy_ZnUHCQ9L3s34ndvbcEUpiJkYEIywbnxNNv0A58N8E44iEnlwr4DXDY754dbyEVSApL8cSv57k031EUsytRWSfS79dR30pE60pQ_pBh-H83c81AccXsLgnQ-irGcZgL3Knb59uK6T3Hi0ATDxuUGoYRRM55uJirESKzDZeCqpl1PRFCAeHbURN5A84PHdhZ4yKowzGDO3MOOAeJRWANHihh5B1VY6u8pRZFvu5QcWY8ZQBjTpJS53xSxqJPaXA9KGNBDA8xIb2vxiGZuoUQFBuB70AkuOKpPNec9eykAb_3eLQPAo1LCJKwx-piXHQijqQFkVbr5b47ivL4FJwiOefbbyoJgqwcKvrMYUCgyPmQa2cRRKdnFLwtFu2cfSH_vwNCuRAfueTIMz7OM3zo-0RlWNUMIJ-pp9a4gOxx7KNGh7x2zhMGne9DKUBYM2nMClTCRl45y0rGaUI9W8p4cQgO9HbsSLcIpHIFkBW96UsGtKF-bm4UtePYElIeToXlGZfF6h46yvidolWq3fsXN7BaC_5pIpN62Bm558o4e21fed6dtyMSCKtCIiUgGSq3N_T4HOUQ_4zbJDqqNKlGsvuQ3gicLBLY6A6tgLXfWJGePhZ9MFKCu82zNJRJbDbcqxusfKq8ayyd--Awg2Wt86bZEPf4XheMzzIYqzTc7HafT79WPTWi1JlKtGRtE1ZQP_OCiikFt=w648-h882" alt="sneakers">
             <p>Nike AirForce 1</p>
             <p>“Модель”</p>
             <p>
@@ -26,7 +136,7 @@
         </td>
         <td>
           <div class="sneakersItem" id="item2">
-            <img src="assets/imgs/sneakers.png" alt="sneakers">
+            <img src="https://lh3.googleusercontent.com/fife/AAbDypDcBp0ci_7uuCkKAoYWiSRFmI3D_6WP45FaKigI6BZP_Qlrl75ifxCaBtXsqIyJ5VRVhcW1KSSNKgedagBtjJjYXD8xH_LHoKZ_Yruzyzjsas2N1iUoCTbVYHN9ZdOYBrIQqK7gmfOy8agUd2PM90A7tY-8RFP0GTrpa_D-wHQMXYbXEx6Pp2GSH9NIo1EnyxGObWZnD3dAzlu5E8DX5bCSp_HCZqYyuAnwip9EAVt3toFa84gqH5eghhCLdLdcaAlpV6Y-EkeSN6kNlbuPl4v7R3squOskYLiJqRw_WhW0KRnmzALd-uYZcJ1I-bWzQY682r03k8BTuhEAC1zx4L8OZ5d6EPvTkL5yiBVBfM0qHuT1F2q65oEwMvDUnikdhaX3QaJbq-h5KqD5fh2SC6N3D-AIW7ptbHwhT5uLs8pvycWqhGOgT5XxZxkOim1siZT_7AYDelPTjVABxmK_P2sPwGughW-PoA4rczcE9l8pDoZ2Xxth-wmUnF8FhBtbbIZpp4BvAcBYk7YkS-T0WJwxpGYfMQRZN_JhmevIGtNmUoZ1reHMGBBcBqziXwX81bqNHC2etjnNdzHfqchoY1ebSgvcQrtcSVZ3Jpx9Ge84Rl8IKoXFaQzzThLROyg52j9f02FPoiUjABuY-qoyz9_e44Y03vHqYiJtGwsX12RD-PEXQIJ0Z-Krk7wMCqm7B6cf6LN9d_EnnkJw8y-1JuP02cSCtAMiIqifbeSvzdnutcyY-WJcbiKR4nRSMyqQ-b7L1GyXJfgEYWKwoI6DUfaVIdpaVmIh9k_GDxlq2yPf8fpeJUiCCguSfdLxU_WaZ8197t4mwmigawBwGfEy_ZnUHCQ9L3s34ndvbcEUpiJkYEIywbnxNNv0A58N8E44iEnlwr4DXDY754dbyEVSApL8cSv57k031EUsytRWSfS79dR30pE60pQ_pBh-H83c81AccXsLgnQ-irGcZgL3Knb59uK6T3Hi0ATDxuUGoYRRM55uJirESKzDZeCqpl1PRFCAeHbURN5A84PHdhZ4yKowzGDO3MOOAeJRWANHihh5B1VY6u8pRZFvu5QcWY8ZQBjTpJS53xSxqJPaXA9KGNBDA8xIb2vxiGZuoUQFBuB70AkuOKpPNec9eykAb_3eLQPAo1LCJKwx-piXHQijqQFkVbr5b47ivL4FJwiOefbbyoJgqwcKvrMYUCgyPmQa2cRRKdnFLwtFu2cfSH_vwNCuRAfueTIMz7OM3zo-0RlWNUMIJ-pp9a4gOxx7KNGh7x2zhMGne9DKUBYM2nMClTCRl45y0rGaUI9W8p4cQgO9HbsSLcIpHIFkBW96UsGtKF-bm4UtePYElIeToXlGZfF6h46yvidolWq3fsXN7BaC_5pIpN62Bm558o4e21fed6dtyMSCKtCIiUgGSq3N_T4HOUQ_4zbJDqqNKlGsvuQ3gicLBLY6A6tgLXfWJGePhZ9MFKCu82zNJRJbDbcqxusfKq8ayyd--Awg2Wt86bZEPf4XheMzzIYqzTc7HafT79WPTWi1JlKtGRtE1ZQP_OCiikFt=w648-h882" alt="sneakers">
             <p>Nike AirForce 1</p>
             <p>“Модель”</p>
             <p>
@@ -38,7 +148,7 @@
         </td>
         <td>
           <div class="sneakersItem">
-            <img src="assets/imgs/sneakers.png" alt="sneakers">
+            <img src="https://lh3.googleusercontent.com/fife/AAbDypDcBp0ci_7uuCkKAoYWiSRFmI3D_6WP45FaKigI6BZP_Qlrl75ifxCaBtXsqIyJ5VRVhcW1KSSNKgedagBtjJjYXD8xH_LHoKZ_Yruzyzjsas2N1iUoCTbVYHN9ZdOYBrIQqK7gmfOy8agUd2PM90A7tY-8RFP0GTrpa_D-wHQMXYbXEx6Pp2GSH9NIo1EnyxGObWZnD3dAzlu5E8DX5bCSp_HCZqYyuAnwip9EAVt3toFa84gqH5eghhCLdLdcaAlpV6Y-EkeSN6kNlbuPl4v7R3squOskYLiJqRw_WhW0KRnmzALd-uYZcJ1I-bWzQY682r03k8BTuhEAC1zx4L8OZ5d6EPvTkL5yiBVBfM0qHuT1F2q65oEwMvDUnikdhaX3QaJbq-h5KqD5fh2SC6N3D-AIW7ptbHwhT5uLs8pvycWqhGOgT5XxZxkOim1siZT_7AYDelPTjVABxmK_P2sPwGughW-PoA4rczcE9l8pDoZ2Xxth-wmUnF8FhBtbbIZpp4BvAcBYk7YkS-T0WJwxpGYfMQRZN_JhmevIGtNmUoZ1reHMGBBcBqziXwX81bqNHC2etjnNdzHfqchoY1ebSgvcQrtcSVZ3Jpx9Ge84Rl8IKoXFaQzzThLROyg52j9f02FPoiUjABuY-qoyz9_e44Y03vHqYiJtGwsX12RD-PEXQIJ0Z-Krk7wMCqm7B6cf6LN9d_EnnkJw8y-1JuP02cSCtAMiIqifbeSvzdnutcyY-WJcbiKR4nRSMyqQ-b7L1GyXJfgEYWKwoI6DUfaVIdpaVmIh9k_GDxlq2yPf8fpeJUiCCguSfdLxU_WaZ8197t4mwmigawBwGfEy_ZnUHCQ9L3s34ndvbcEUpiJkYEIywbnxNNv0A58N8E44iEnlwr4DXDY754dbyEVSApL8cSv57k031EUsytRWSfS79dR30pE60pQ_pBh-H83c81AccXsLgnQ-irGcZgL3Knb59uK6T3Hi0ATDxuUGoYRRM55uJirESKzDZeCqpl1PRFCAeHbURN5A84PHdhZ4yKowzGDO3MOOAeJRWANHihh5B1VY6u8pRZFvu5QcWY8ZQBjTpJS53xSxqJPaXA9KGNBDA8xIb2vxiGZuoUQFBuB70AkuOKpPNec9eykAb_3eLQPAo1LCJKwx-piXHQijqQFkVbr5b47ivL4FJwiOefbbyoJgqwcKvrMYUCgyPmQa2cRRKdnFLwtFu2cfSH_vwNCuRAfueTIMz7OM3zo-0RlWNUMIJ-pp9a4gOxx7KNGh7x2zhMGne9DKUBYM2nMClTCRl45y0rGaUI9W8p4cQgO9HbsSLcIpHIFkBW96UsGtKF-bm4UtePYElIeToXlGZfF6h46yvidolWq3fsXN7BaC_5pIpN62Bm558o4e21fed6dtyMSCKtCIiUgGSq3N_T4HOUQ_4zbJDqqNKlGsvuQ3gicLBLY6A6tgLXfWJGePhZ9MFKCu82zNJRJbDbcqxusfKq8ayyd--Awg2Wt86bZEPf4XheMzzIYqzTc7HafT79WPTWi1JlKtGRtE1ZQP_OCiikFt=w648-h882" alt="sneakers">
             <p>Nike AirForce 1</p>
             <p>“Модель”</p>
             <p>
